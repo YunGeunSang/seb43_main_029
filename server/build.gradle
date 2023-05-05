@@ -24,24 +24,12 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.mysql:mysql-connector-j'
-	implementation 'org.springframework.cloud:spring-cloud-starter-aws-parameter-store-config' // 추가
-//	implementation group: 'io.awspring.cloud', name: 'spring-cloud-starter-aws-parameter-store-config'
 
 	annotationProcessor 'org.projectlombok:lombok'
 	implementation 'org.mapstruct:mapstruct:1.4.2.Final'
 	annotationProcessor 'org.mapstruct:mapstruct-processor:1.4.2.Final'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-}
-
-ext {
-	set('springCloudVersion', "Hoxton.SR6")
-}
-
-dependencyManagement { // 블록 추가
-	imports {
-		mavenBom "io.awspring.cloud:spring-cloud-aws-dependencies:2.3.3"
-	}
 }
 
 tasks.named('test') {

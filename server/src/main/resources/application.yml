@@ -5,12 +5,11 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: ${spring.datasource.url}
-    username: ${spring.datasource.username}
-    password: ${spring.datasource.password}
+    url: jdbc:mysql://seb43main029.cafsp4hphkci.ap-northeast-2.rds.amazonaws.com:13306/application?serverTimezone=Asia/Seoul
+    username: root
+    password: 29main!!
 
   config:
-    import: 'aws-parameterstore:'
     use-legacy-processing: true
 
   jpa:
@@ -28,12 +27,5 @@ spring:
           descriptor:
             sql: trace
 
-aws:
-  paramstore:
-    enabled: true
-    prefix: /spring-boot-aws
-    profile-separator: _
-    name: seb43main029
-
 config:
-  domain: ${config.domain}
+  domain: http://seb43-main-029-client.s3-website.ap-northeast-2.amazonaws.com
