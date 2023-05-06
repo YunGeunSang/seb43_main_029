@@ -6,7 +6,7 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://seb43main029.cafsp4hphkci.ap-northeast-2.rds.amazonaws.com:13306/application?serverTimezone=Asia/Seoul
-    username: ${jdbc.username}
+    username: root
     password: 29main!!
 
   config:
@@ -29,10 +29,3 @@ spring:
 
 config:
   domain: http://seb43-main-029-client.s3-website.ap-northeast-2.amazonaws.com
-
-aws:
-  paramstore:
-    enabled: true
-    prefix: /config
-    profile-separator: _
-    name: seb43main029
