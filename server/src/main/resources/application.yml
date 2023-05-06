@@ -33,5 +33,5 @@ aws:
     name: seb43main029
 
 
-config:
-  domain: http://seb43-main-029-client.s3-website.ap-northeast-2.amazonaws.com
+#config:
+#  domain: http://seb43-main-029-client.s3-website.ap-northeast-2.amazonaws.com
