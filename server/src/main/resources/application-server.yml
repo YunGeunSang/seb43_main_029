@@ -1,16 +1,14 @@
 spring:
-  output:
-    ansi:
-      enabled: ALWAYS
-
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://seb43main029.cafsp4hphkci.ap-northeast-2.rds.amazonaws.com:13306/application?serverTimezone=Asia/Seoul
-    username: root
-    password: 29main!!
-
   config:
     use-legacy-processing: true
+    activate:
+      on-profile: production
+    import: 'aws-parameterstore'
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${jdbc.url}
+    username: ${jdbc.username}
+    password: ${jdbc.password}
 
   jpa:
     database: mysql
@@ -26,6 +24,14 @@ spring:
         type:
           descriptor:
             sql: trace
+
+aws:
+  paramstore:
+    enabled: true
+    prefix: /config
+    profile-separator: _
+    name: seb43main029
+
 
 config:
   domain: http://seb43-main-029-client.s3-website.ap-northeast-2.amazonaws.com
