@@ -1,10 +1,10 @@
 version: 0.2
 
-env:
-  parameter-store:
-    #JDBC_URL: /config/seb43main029/jdbc.url
-    #JDBC_USERNAME: /config/seb43main029/jdbc.username
-    JDBC_USERNAME: /config/seb43main029/jdbc.password
+#env:
+#  parameter-store:
+#    #JDBC_URL: /config/seb43main029/jdbc.url
+#    #JDBC_USERNAME: /config/seb43main029/jdbc.username
+#    JDBC_USERNAME: /config/seb43main029/jdbc.password
 
 phases:
   install:
