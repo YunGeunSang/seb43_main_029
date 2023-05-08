@@ -5,9 +5,9 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://seb43main029.cafsp4hphkci.ap-northeast-2.rds.amazonaws.com:13306/application?serverTimezone=Asia/Seoul
-    username: root
-    password: 29main!!
+    url: ${JDBC_URL}
+    username: ${JDBC_USERNAME}
+    password: ${JDBC_PASSWORD}
 
   config:
     use-legacy-processing: true
@@ -38,3 +38,10 @@ jwt:
   key: KaPdSgVkXp2s5v8y/B?E(H+MbQeThWmZ #${JWT_SECRET_KEY}
   access-token-expiration-minutes: 40
   refresh-token-expiration-minutes: 420
+
+aws:
+  paramstore:
+    enabled: true
+    prefix: /config
+    profile-separator: _
+    name: seb43main029
