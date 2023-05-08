@@ -4,7 +4,7 @@ env:
   parameter-store:
     #JDBC_URL: /config/seb43main029/jdbc.url
     #JDBC_USERNAME: /config/seb43main029/jdbc.username
-    /config/seb43main029/jdbc.password: /config/seb43main029/jdbc.password
+    JDBC_USERNAME: /config/seb43main029/jdbc.password
 
 phases:
   install:
