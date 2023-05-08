@@ -29,3 +29,12 @@ spring:
 
 config:
   domain: http://seb43-main-029-client.s3-website.ap-northeast-2.amazonaws.com
+
+mail:
+  address:
+    admin: admin@gmail.com
+
+jwt:
+  key: KaPdSgVkXp2s5v8y/B?E(H+MbQeThWmZ #${JWT_SECRET_KEY}
+  access-token-expiration-minutes: 40
+  refresh-token-expiration-minutes: 420
