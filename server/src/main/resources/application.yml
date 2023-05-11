@@ -47,3 +47,15 @@ aws:
     name: seb43main029
   ssm:
     enabled: true
+
+cloud:
+  aws:
+    s3:
+      bucket: seb43-main-029-images
+    region:
+      static: ap-northeast-2
+    stack:
+      auto: false
+    credentials:
+      access-key: AKIAVKPGHUCTDGWQDJEA
+      secret-key: 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
