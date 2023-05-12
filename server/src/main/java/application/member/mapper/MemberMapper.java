@@ -12,8 +12,10 @@ public interface MemberMapper {
     Member memberPatchNicknameDtoToMember(MemberDto.PatchNickname requestBody);
     Member memberPatchProfileDtoToMember(MemberDto.PatchProfile requestBody);
     @Mapping(source = "image.url", target = "url")
+    @Mapping(source = "member.roles", target = "role")
     MemberDto.Response memberToMemberResponseDto(Member member);
     @Mapping(source = "member.restaurants", target = "restaurantList")
     @Mapping(source = "image.url", target = "url")
+    @Mapping(source = "member.roles", target = "role")
     MemberDto.ResponseOwner memberToMemberResponseOwnerDto(Member member);
 }
