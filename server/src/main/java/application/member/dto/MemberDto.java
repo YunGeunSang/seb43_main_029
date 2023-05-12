@@ -67,6 +67,7 @@ public class MemberDto {
 
         // Auditable에서 String 포맷으로 변환되므로 String 타입으로 선언
         private String createdAt;
+        private List<String> role;
 
         // TODO: 리뷰 추가시 구현
         //private List<Review> reviews;
@@ -86,7 +87,7 @@ public class MemberDto {
         private String nickname;
         private String createdAt;
         private String companyNumber;
-
+        private List<String> role;
         private List<RestaurantDto.RestaurantResponseDto> restaurantList = new ArrayList<>();
 
 
