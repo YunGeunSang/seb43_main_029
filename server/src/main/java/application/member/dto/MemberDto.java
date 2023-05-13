@@ -52,7 +52,7 @@ public class MemberDto {
     public static class PatchProfile{
         private long memberId;
         // TODO: 이미지 등록 후 수정할 것
-        private long imageId;
+        private String url;
     }
 
     @Getter
@@ -62,11 +62,14 @@ public class MemberDto {
     public static class Response{
         private long memberId;
         // TODO: 이미지 등록 후 수정할 것
+        private String email;
         private String url;
         private String nickname;
+        private String memberStatus;
 
         // Auditable에서 String 포맷으로 변환되므로 String 타입으로 선언
         private String createdAt;
+        private String modifiedAt;
         private List<String> role;
 
         // TODO: 리뷰 추가시 구현
@@ -83,10 +86,13 @@ public class MemberDto {
     public static class ResponseOwner{
         private long memberId;
         // TODO: 이미지 등록 후 수정할 것
+        private String email;
         private String url;
         private String nickname;
         private String createdAt;
+        private String modifiedAt;
         private String companyNumber;
+        private String memberStatus;
         private List<String> role;
         private List<RestaurantDto.RestaurantResponseDto> restaurantList = new ArrayList<>();
 
