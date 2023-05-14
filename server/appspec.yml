@@ -18,7 +18,7 @@ hooks:
     - location: server_start.sh
     - location: deploy.sh
       timeout: 3000
-      runas: root
+      runas: ubuntu
   ApplicationStop:
     - location: server_stop.sh
       timeout: 3000
