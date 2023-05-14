@@ -16,6 +16,7 @@ hooks:
       runas: root
   ApplicationStart:
     - location: server_start.sh
+    - location: deploy.sh
       timeout: 3000
       runas: root
   ApplicationStop:
