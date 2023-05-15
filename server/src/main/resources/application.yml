@@ -57,5 +57,5 @@ cloud:
     stack:
       auto: false
     credentials:
-      access-key: ${ACCESS_KEY}
+      access-key: AKIAVKPGHUCTDGWQDJEA
       secret-key: ${SECRET_KEY}
