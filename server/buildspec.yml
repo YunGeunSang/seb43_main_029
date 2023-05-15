@@ -14,7 +14,6 @@ phases:
     commands:
       - echo Build Starting on `date`
       - cd server
-      - export JDBC_USERNAME="root"
       - chmod +x ./gradlew
       - ./gradlew build
   post_build:

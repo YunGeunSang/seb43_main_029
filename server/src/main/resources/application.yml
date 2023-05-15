@@ -6,7 +6,7 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://seb43main029.cafsp4hphkci.ap-northeast-2.rds.amazonaws.com:13306/application?serverTimezone=Asia/Seoul
-    username: ${JDBC_USERNAME}
+    username: root
     password: 29main!! #${JDBC_PASSWORD}
 
   config:
@@ -35,7 +35,7 @@ mail:
     admin: admin@gmail.com
 
 jwt:
-  key: KaPdSgVkXp2s5v8y/B?E(H+MbQeThWmZ #${JWT_SECRET_KEY}
+  key: ${JWT_SECRET_KEY} #KaPdSgVkXp2s5v8y/B?E(H+MbQeThWmZ
   access-token-expiration-minutes: 40
   refresh-token-expiration-minutes: 420
 
