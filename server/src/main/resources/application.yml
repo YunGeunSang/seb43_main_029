@@ -39,14 +39,14 @@ jwt:
   access-token-expiration-minutes: 40
   refresh-token-expiration-minutes: 420
 
-aws:
-  paramstore:
-    enabled: true
-    prefix: /config
-    profile-separator: _
-    name: seb43main029
-  ssm:
-    enabled: true
+#aws:
+#  paramstore:
+#    enabled: true
+#    prefix: /config
+#    profile-separator: _
+#    name: seb43main029
+#  ssm:
+#    enabled: true
 
 cloud:
   aws:
