@@ -35,7 +35,7 @@ mail:
     admin: admin@gmail.com
 
 jwt:
-  key: ${JWT_SECRET_KEY} #KaPdSgVkXp2s5v8y/B?E(H+MbQeThWmZ
+  key: KaPdSgVkXp2s5v8y/B?E(H+MbQeThWmZ
   access-token-expiration-minutes: 40
   refresh-token-expiration-minutes: 420
 
@@ -57,5 +57,5 @@ cloud:
     stack:
       auto: false
     credentials:
-      access-key: AKIAVKPGHUCTDGWQDJEA
-      secret-key: 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
+      access-key: ${ACCESS_KEY}
+      secret-key: ${SECRET_KEY}
